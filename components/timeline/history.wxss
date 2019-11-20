@@ -1,0 +1,73 @@
+.modal {
+  /* 模态弹窗置顶 */
+  width: 100vw;
+  height: 100vh;
+  margin: 0rpx auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  overflow: scroll;
+}
+
+.leaf-container {
+  /* 外部容器 */
+  margin: 10rpx 10rpx;
+  padding: 10rpx 0rpx;
+}
+
+.sub-container {
+  /*行样式*/
+  display: flex;
+}
+
+.dotline {
+  /*时间轴*/
+  width: 35px;
+  position: relative;
+}
+
+.line {
+  /*竖线*/
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  left: 15px;
+}
+
+.dot {
+  /*圆点*/
+  width: 11px;
+  height: 11px;
+  background: #30ac63;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+.content {
+  /*右侧主体内容*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+  margin: 3px 0;
+}
+
+.chapter {
+  /*章节部分*/
+  font-size: 30rpx;
+  line-height: 68rpx;
+  color: #444;
+  white-space: normal;
+  padding-right: 10px;
+}
+
+.course {
+  /*时间部分*/
+  font-size: 28rpx;
+  line-height: 56rpx;
+  color: #999;
+}

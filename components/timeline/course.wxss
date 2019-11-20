@@ -1,0 +1,59 @@
+.leaf {
+  margin: 10rpx 0rpx;
+  padding: 20rpx 50rpx;
+}
+
+.top-view {
+  display: flex;
+}
+
+.left-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.dot-red {
+  background: red;
+}
+
+.dot-gray {
+  background: #999;
+}
+
+.left-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 4.5px;
+}
+
+.left-line {
+  display: flex;
+  flex: 1;
+  width: 1px;
+  margin-left: 3.5px;
+  background: #dadada;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 15rpx;
+  margin: 0rpx 0rpx 20rpx 15rpx;
+}
+
+.color-red {
+  color: #fe473c;
+}
+
+.color-gray {
+  color: #999;
+}
+
+.text {
+  font-weight: 600;
+}
+
+.time {
+  margin-top: 20rpx;
+}

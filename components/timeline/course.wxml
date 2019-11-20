@@ -1,0 +1,16 @@
+<view class="leaf" wx:if="{{isShow}}">
+  <view class='top-view' wx:for="{{content}}" wx:for-item="top" wx:for-index="i" wx:key="index" bindtap="clickSubContainer">
+    <!--  左边 -->
+    <view class='left-view'>
+      <view class='left-dot {{i ==0?"dot-red":"dot-gray"}}'></view>
+      <view class='left-line'></view>
+    </view>
+    <!-- 右边 -->
+    <view class='right-content'>
+      <!-- <slot name="right-chilren"></slot> -->
+      <text class='text title {{i ==0? "color-red" : "color-gray"}}'>{{top.status}}</text>
+      <text wx:for="{{top.textArray}}" wx:for-item="text" wx:key="unique" class='text title {{i ==0? "color-red" : "color-gray"}}'>{{text}}</text>
+      <text class='text time {{i ==0? "color-red" : "color-gray"}}'>{{top.time}}</text>
+    </view>
+  </view>
+</view>

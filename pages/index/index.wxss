@@ -1,0 +1,9 @@
+.archive_btn {
+  width: 150rpx;
+  display: table-cell;
+  color: white;
+  background-color: #1ace41d3;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+}

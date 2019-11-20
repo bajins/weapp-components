@@ -1,0 +1,10 @@
+<!-- bind:bindGetUserInfo 组件之间通信从父级传递数据 -->
+<userinfo id="userinfo" bind:bindGetUserInfo="bindGetUserInfo"></userinfo>
+
+<search id="search" bind:searchList="searchList" bind:endsearchList="endsearchList" bind:cancelsearch="cancelsearch" bind:activity_clear="activity_clear"></search>
+
+<view class="archive_btn" bindtap="bindTimeline">历程时间轴</view>
+<view class="archive_btn" bindtap="bindTimelineCourse">进度时间轴</view>
+
+<history id="history" showMode="modal" bind:clickSubContainer="clickSubContainer"></history>
+<course id="course"  bind:clickSubContainer="clickSubContainerCourse"></course>

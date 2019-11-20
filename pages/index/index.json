@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "userinfo": "/components/authorize/userinfo",
+    "search": "/components/search/index",
+    "history": "/components/timeline/history",
+    "course": "/components/timeline/course"
+  }
+}

@@ -1,0 +1,61 @@
+<!-- 内嵌滚动 -->
+<block wx:if="{{showMode=='embedded'}}">
+  <view class="leaf-container" wx:if="{{isShow}}" style="overflow: auto;height:{{height}}">
+    <view class="sub-container" bindtap="clickSubContainer" wx:for="{{newsList}}" wx:key="index">
+      <!-- 左侧时间轴 -->
+      <view class="dotline">
+        <!-- 竖线 -->
+        <view class="line"></view>
+        <!-- 圆点 -->
+        <view class="dot"></view>
+      </view>
+      <!-- 右侧内容 -->
+      <view class="content">
+        <text class="course">{{item.time}}</text>
+        <text class="chapter">{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+
+<!-- 模态弹框 -->
+<block wx:elif="{{showMode=='modal'}}">
+  <view class="modal" wx:if="{{isShow}}">
+    <view class="leaf-container">
+      <view class="sub-container" bindtap="clickSubContainer" wx:for="{{newsList}}" wx:key="index">
+        <!-- 左侧时间轴 -->
+        <view class="dotline">
+          <!-- 竖线 -->
+          <view class="line"></view>
+          <!-- 圆点 -->
+          <view class="dot"></view>
+        </view>
+        <!-- 右侧内容 -->
+        <view class="content">
+          <text class="course">{{item.time}}</text>
+          <text class="chapter">{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+<!-- 默认 -->
+<block wx:else>
+  <view class="leaf-container" wx:if="{{isShow}}">
+    <view class="sub-container" bindtap="clickSubContainer" wx:for="{{newsList}}" wx:key="index">
+      <!-- 左侧时间轴 -->
+      <view class="dotline">
+        <!-- 竖线 -->
+        <view class="line"></view>
+        <!-- 圆点 -->
+        <view class="dot"></view>
+      </view>
+      <!-- 右侧内容 -->
+      <view class="content">
+        <text class="course">{{item.time}}</text>
+        <text class="chapter">{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</block>

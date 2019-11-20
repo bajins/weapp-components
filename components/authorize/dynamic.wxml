@@ -1,0 +1,27 @@
+<view class='box' catchtouchmove='true' wx:if='{{popShow}}'>
+  <view class='pop'>
+    <view class='top'>
+      <view class='txt'></view>
+      <view class='title'>{{title}}</view>
+      <view class='txt' bindtap='popClose'>关闭</view>
+    </view>
+    <view class='center'>
+      <view class='explain'>
+        <text>{{appName}} 申请获得以下权限：</text>
+      </view>
+      <view class='tip'>
+        <view class='dian'></view>
+        <text>同意此应用访问你的{{authTxt}}</text>
+      </view>
+    </view>
+    <button class='bottom' wx:if="{{authType=='userInfo'}}" open-type="getUserInfo" bindgetuserinfo="bindGetAuthorize">
+      允许
+    </button>
+    <button class='bottom' wx:if="{{authType=='phoneNumber'}}" open-type="getPhoneNumber" bindgetphonenumber="bindGetAuthorize">
+      允许
+    </button>
+    <button class='bottom' wx:if="{{authType!='userInfo' && authType!='phoneNumber'}}" open-type="openSetting" bindopensetting="bindGetAuthorize">
+      允许
+    </button>
+  </view>
+</view>
