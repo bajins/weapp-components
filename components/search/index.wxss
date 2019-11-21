@@ -1,15 +1,14 @@
 .wrapper {
-  width: calc(100% - 64rpx);
+  width: 100vw;
   background: #fff;
-  height: 60rpx;
-  padding: 20rpx;
+  padding: 10rpx;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
 .seabox_bar {
-  width: calc(100% - 32rpx);
+  width: calc(100% - 80rpx);
   height: 60rpx;
   display: flex;
   align-items: center;
@@ -31,8 +30,8 @@
 }
 
 .activity_seabtn {
-  width: 70rpx;
   font-size: 28rpx;
   margin-left: 20rpx;
   color: rgb(140, 155, 167);
+  text-align: center
 }
