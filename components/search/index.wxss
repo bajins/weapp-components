@@ -8,7 +8,7 @@
 }
 
 .seabox_bar {
-  width: calc(100% - 80rpx);
+  width: calc(100% - 130rpx);
   height: 60rpx;
   display: flex;
   align-items: center;
