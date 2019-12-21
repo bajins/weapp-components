@@ -89,7 +89,7 @@ clickFloatOneButton: function() {
 }
 ```
 
-2、 `src`此属性为按钮的图片地址数组
+2、 `src`此属性为按钮的图片地址
 
 > 注意路径为相对于组件位置
 
