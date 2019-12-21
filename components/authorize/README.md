@@ -18,7 +18,7 @@
 
 ```xml
 <!-- bind:组件中的事件名称：组件之间通信从父级传递数据 -->
-<dynamic id="authorize" appName="我涂" bind:bindGetAuthorize="bindGetAuthorize"></dynamic>
+<dynamic id="authorize" app-name="我涂" bind:bindGetAuthorize="bindGetAuthorize"></dynamic>
 ```
 
 

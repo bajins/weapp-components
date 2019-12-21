@@ -3,6 +3,8 @@
     "userinfo": "/components/authorize/userinfo",
     "search": "/components/search/index",
     "history": "/components/timeline/history",
-    "course": "/components/timeline/course"
+    "course": "/components/timeline/course",
+    "floatFixedbutton":"/components/floatbutton/fixed",
+    "floatOneButton": "/components/floatbutton/one"
   }
 }

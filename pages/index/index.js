@@ -5,6 +5,13 @@ Page({
   onLoad: function() {
 
   },
+  //监听页面滚动
+  onPageScroll: function(e) {
+    this.setData({
+      // 当页面滚动大于100px时显示
+      backTop: e.scrollTop > 100 ? true : false
+    });
+  },
   //================== authorize ================
   /**
    * 获取从父级组件传来的数据
@@ -85,5 +92,12 @@ Page({
   clickSubContainerCourse() {
     // 隐藏组件
     this.course.canHide();
+  },
+  //================== 点击悬浮固定按钮 ==================
+  clickFloatButton: function(e) {
+    console.log(`点击第${e.detail.index}个按钮`);
+  },
+  clickFloatOneButton: function (e) {
+   console.log("点击悬浮按钮");
   }
 })

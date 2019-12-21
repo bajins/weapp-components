@@ -1,0 +1,3 @@
+<view class='float_box {{ customClass }}' style="{{ customStyle }}" bindtap='clickbtn'>
+  <image class='float_img' src='{{ src }}' />
+</view>

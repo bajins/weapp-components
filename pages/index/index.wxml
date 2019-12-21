@@ -6,5 +6,10 @@
 <view class="archive_btn" bindtap="bindTimeline">历程时间轴</view>
 <view class="archive_btn" bindtap="bindTimelineCourse">进度时间轴</view>
 
-<history id="history" showMode="modal" bind:clickSubContainer="clickSubContainer"></history>
+<history id="history" show-mode="modal" bind:clickSubContainer="clickSubContainer"></history>
 <course id="course"  bind:clickSubContainer="clickSubContainerCourse"></course>
+
+<floatFixedbutton back-top images="{{ ['./top.png','./top.png'] }}" bind:clickFB="clickFloatButton"/>
+
+<floatOneButton bind:clickFB="clickFloatOneButton" src="./top.png"/>
+

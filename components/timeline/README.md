@@ -20,7 +20,7 @@
 ```xml
 <!-- showMode：modal模态弹窗，embedded内嵌入页面进行滚动 -->
 <!-- 当showMode="embedded"时，必须加上height="高度"属性设置 -->
-<history id="history" showMode="modal" bind:clickSubContainer="clickSubContainer"></history>
+<history id="history" show-mode="modal" bind:clickSubContainer="clickSubContainer"></history>
 ```
 
 
