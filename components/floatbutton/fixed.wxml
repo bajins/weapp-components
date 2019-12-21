@@ -1,10 +1,10 @@
-<view class='float_box {{ customStyle }}'>
+<view class='float_box {{ customClass }}'>
   <block wx:for="{{ images }}" wx:key="index">
-    <view class='float_main' data-index="{{ index }}" bindtap='clickBtn'>
+    <view class='float_main' style="{{ customStyle }}" data-index="{{ index }}" bindtap='clickBtn'>
       <image class='float_img' src='{{ item }}' />
     </view>
   </block>
-  <view class='float_main' catchtap='clickBackTop' wx:if="{{ backTop }}">
+  <view class='float_main' style="{{ customStyle }}" catchtap='clickBackTop' wx:if="{{ backTop }}">
     <image class='float_img' src='./top.png' />
   </view>
 </view>
