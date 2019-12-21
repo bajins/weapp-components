@@ -9,12 +9,12 @@
   width: 80rpx;
   height: 80rpx;
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   margin-top: 18rpx;
   background: #ffffffc4;
   border-radius: 50%;
-  overflow: hidden;
   box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.1);
 }
 

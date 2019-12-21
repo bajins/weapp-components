@@ -95,4 +95,6 @@ clickFloatOneButton: function() {
 
 3、`custom-style`自定义样式
 
+> 如：`custom-style="left:auto;right:0px;border-radius: 50% 0px 0px 50%;"`
+
 4、`custom-class`自定义根节点样式类

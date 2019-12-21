@@ -5,12 +5,12 @@
   left: 0rpx;
   top: 50%;
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   text-align: center;
   background: #ffffffc4;
   border-radius: 0px 50% 50% 0px;
-  overflow: hidden;
   box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.1);
 }
 
