@@ -13,7 +13,5 @@
 
 - [计时器](/components/timer)
 
-- [悬浮按钮](/components/floatbutton)
-
-- [悬浮菜单](/components/floatmenu)
+- [悬浮按钮和菜单](/components/floatbutton)
 
